@@ -55,6 +55,19 @@ func CheckPhone(s string) bool {
 	return true
 }
 
-func Hello(name string) string{
+func Hello(name ,lang string) (string,error){
+
+		switch lang {
+
+		case "en":
+			return  fmt.Sprintf("Hi,%s!",name),nil
+		case "ch":
+			return  fmt.Sprintf("你好,%s!",name),nil
+		case "france":
+			return  fmt.Sprintf("ni hao,%s!",name),nil
+		default:
+			return "",fmt.Errorf("Not Support language!")
+
+	}
 	return fmt.Sprintf("Hi,%s !!!",name)
 }
