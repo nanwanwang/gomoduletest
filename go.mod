@@ -1,3 +1,3 @@
-module github.com/nanwanwang/gomoduletest/v2
+module github.com/nanwanwang/gomoduletest
 
 go 1.14
