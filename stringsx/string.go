@@ -69,5 +69,4 @@ func Hello(name ,lang string) (string,error){
 			return "",fmt.Errorf("Not Support language!")
 
 	}
-	return fmt.Sprintf("Hi,%s !!!",name)
 }
